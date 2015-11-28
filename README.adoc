@@ -1,0 +1,51 @@
+= Hostnames and usernames to reserve
+
+If you're developing or installing a service with accounts,
+this is a list of hostnames and usernames that you should deny.
+
+All the credit goes to Geoffrey Thomas who also gives a good explanation of
+why you should adopt such list in his blog post:
+https://ldpreload.com/blog/names-to-reserve
+Please make sure to read that to understand that this blacklist is only one part of the protection needed to avoid issues like domain-level cookies.
+
+If you see any omission in the list, send me a https://github.com/zimbatm/hostnames-and-usernames-to-reserve/pulls:[PR].
+
+== The username format
+
+For the sake of forward-compatiblity (and keeping the blacklist small), all usernames should only allow ASCII-only hostname-like names.
+
+In regexp format: `/^[a-z]([a-z0-9-]*[a-z0-9])?$/`
+
+== The list file format
+
+Each line is either an empty line, a comment or a username.
+
+A comment line starts with a # character.
+
+Usernames can also be duplicated if they belong to different categories.
+
+Or if you want to import the list programmatically here is the
+https://en.wikipedia.org/wiki/Extended_Backus%E2%80%93Naur_Form[EBNF] format:
+
+[source,ebnf]
+----
+cr = "\n";
+not-cr = all characters - cr;
+
+comment = "#", { not-cr } ;
+username = all characters - "#" , { not-cr } ;
+
+line = ( comment | username | ), cr ;
+
+grammar = { line } ;
+----
+
+== The list
+
+link:names-to-reserve.txt[Link because Github doesn't support asciidoc includes]
+
+[source,ruby]
+----
+include::names-to-reserve.txt[]
+----
+
