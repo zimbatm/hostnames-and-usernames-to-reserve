@@ -8,7 +8,7 @@ why you should adopt such list in his blog post:
 https://ldpreload.com/blog/names-to-reserve
 Please make sure to read that to understand that this blacklist is only one part of the protection needed to avoid issues like domain-level cookies.
 
-If you see any omission in the list, send me a https://github.com/zimbatm/hostnames-and-usernames-to-reserve/pulls:[PR].
+If you see any omission in the list, send me a https://github.com/zimbatm/hostnames-and-usernames-to-reserve/pulls[PR].
 
 == The username format
 
