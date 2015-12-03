@@ -111,6 +111,7 @@ new
 news
 pricing
 privacy
+settings
 signin
 signout
 src
