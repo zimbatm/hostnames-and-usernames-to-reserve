@@ -49,3 +49,6 @@ link:names-to-reserve.txt[Link because Github doesn't support asciidoc includes]
 include::names-to-reserve.txt[]
 ----
 
+== License
+
+Copyright and related rights waived via https://creativecommons.org/publicdomain/zero/1.0/[CC0]
