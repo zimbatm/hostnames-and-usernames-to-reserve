@@ -81,8 +81,11 @@ users
 
 # commonly-used top paths
 about
+account
+accounts
 admin
 app
+beta
 blog
 copyright
 css
@@ -103,6 +106,7 @@ help
 image
 images
 img
+join
 js
 login
 logout
@@ -114,6 +118,7 @@ privacy
 settings
 signin
 signout
+signup
 src
 status
 support
