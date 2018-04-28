@@ -84,6 +84,7 @@ about
 account
 accounts
 admin
+api
 app
 beta
 blog
